@@ -1,73 +1,12 @@
 #include "function.h"
-int aux=0;
+
 int k=1;
 int i;
 int j;
-//structuri
- task taskuri[20] ,taskAux;
+int number_of_tasks;
+int p;
+task taskuri[20];
 
-void bubbleSort( task arr[], int n)
-{
-    int i, j;                                     //orodonare cu metoda bulelorr
-    for (i = 0; i < n-1; i++)
-        for (j = 0; j < n-i-1; j++)
-            if (arr[j].duration > arr[j+1].duration)
-            {
-                taskAux.start = arr[j].start;             //aux=x;
-                taskAux.finish=arr[j].finish;
-                taskAux.duration=arr[j].duration;
-
-                arr[j].start = arr[j+1].start;              //x=y;
-                arr[j].finish = arr[j+1].finish;
-                arr[j].duration = arr[j+1].duration;
-
-                arr[j+1].start= taskAux.start;              //y=aux;
-                arr[j+1].finish= taskAux.finish;
-                arr[j+1].duration= taskAux.duration;
-            }
-            else if(arr[j].duration == arr[j+1].duration)
-            {
-                if(arr[j].start > arr[j+1].start)
-                {
-                    taskAux.start = arr[j].start;             //aux=x;
-                    taskAux.finish=arr[j].finish;
-                    taskAux.duration=arr[j].duration;
-
-                    arr[j].start = arr[j+1].start;              //x=y;
-                    arr[j].finish = arr[j+1].finish;
-                    arr[j].duration = arr[j+1].duration;
-
-                    arr[j+1].start= taskAux.start;              //y=aux;
-                    arr[j+1].finish= taskAux.finish;
-                    arr[j+1].duration= taskAux.duration;
-
-                }
-
-            }
-
-
-}
-int sortare( task taskuri[],int n)
-{
-    aux=taskuri[0].finish;
-    for(i=0; i<=n-2; i++)               //ordornareeeeeeeeeee
-    {
-        for(j=i+1; j<=n-1; j++)
-        {
-            if(aux<=taskuri[j].start)
-            {
-                k=k+taskuri[j].duration;
-
-                aux=taskuri[j].finish;
-                i++;
-            }
-        }
-
-    }
-
-    return k;
-
-}
 int main()
 {
 
@@ -89,6 +28,7 @@ int main()
     fscanf(myFile, "%d,", &numberArray[0]);
     n=numberArray[0];
     j=0;
+
     for (i = 1; i <= n*2; i++)                                   // scriere in fisier
     {
         fscanf(myFile, "%d,", &numberArray[i] );
@@ -116,22 +56,7 @@ int main()
     }
 
     k=sortare(taskuri,n);
-
-//    int k=1;
-//    int aux=0;
-//    aux=taskuri[0].finish;
-//            for(i=0;i<=n-2;i++){                //ordornareeeeeeeeeee
-//                for(j=i+1;j<=n-1;j++){
-//                if(aux<=taskuri[j].start)
-//                {
-//                    k=k+taskuri[j].duration;
-//
-//                    aux=taskuri[j].finish;
-//                       i++;
-//                }
-//            }
-//
-//}
+    printf("The maximum duration is:");
     printf("k=%d",k);
     fclose(myFile);
 
