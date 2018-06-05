@@ -1,3 +1,8 @@
+///\file function.h
+/// Developed by Tolgoi Dragos Cristian  05/06/2018
+///
+///\brief project no.3- Doxygen
+
 #ifndef MAIN_H_INCLUDED
 #define MAIN_H_INCLUDED
 

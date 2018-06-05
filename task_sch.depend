@@ -3,13 +3,23 @@
 	<stdio.h>
 	<stdlib.h>
 
-1528204525 source:c:\users\dragos\desktop\task_sch\main.c
+1528205110 source:c:\users\dragos\desktop\task_sch\main.c
 	"function.h"
 
-1528201945 c:\users\dragos\desktop\task_sch\function.h
+1528229744 c:\users\dragos\desktop\task_sch\function.h
 	<stdio.h>
 	<stdlib.h>
 
-1528205034 source:c:\users\dragos\desktop\task_sch\function.c
+1528230464 source:c:\users\dragos\desktop\task_sch\function.c
+	"function.h"
+
+1528231912 source:c:\users\dragos\desktop\proiectad\task_sch\function.c
+	"function.h"
+
+1528231688 c:\users\dragos\desktop\proiectad\task_sch\function.h
+	<stdio.h>
+	<stdlib.h>
+
+1528231903 source:c:\users\dragos\desktop\proiectad\task_sch\main.c
 	"function.h"
 
